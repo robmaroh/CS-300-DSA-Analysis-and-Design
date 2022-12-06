@@ -1,0 +1,171 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'node'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/rmsnh/source/repos/HashTable/HashTable.cpp"
+                },
+                "region": {
+                  "startLine": 185,
+                  "startColumn": 13,
+                  "endLine": 185,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HashTable::PrintAll",
+                  "decoratedName": "?PrintAll@HashTable@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/rmsnh/source/repos/HashTable/HashTable.cpp"
+                          },
+                          "region": {
+                            "startLine": 180,
+                            "startColumn": 36
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/rmsnh/source/repos/HashTable/HashTable.cpp"
+                          },
+                          "region": {
+                            "startLine": 181,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'node' is NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/rmsnh/source/repos/HashTable/HashTable.cpp"
+                          },
+                          "region": {
+                            "startLine": 183,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/rmsnh/source/repos/HashTable/HashTable.cpp"
+                          },
+                          "region": {
+                            "startLine": 183,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'i<4294967295')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/rmsnh/source/repos/HashTable/HashTable.cpp"
+                          },
+                          "region": {
+                            "startLine": 185,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "'node' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31630.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/rmsnh/source/repos/HashTable/HashTable.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "6b911a86e99d4b539d31b1ab6c0a91a4647832f2a924ac33dcdec00aa963f1a8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/rmsnh/source/repos/hashtable/csvparser.hpp"
+          },
+          "hashes": {
+            "sha-256": "2b84ba0a7d78853c81016cf9223d9a8f3d28909a0764824a1ea53e7f1a74c354"
+          }
+        }
+      ]
+    }
+  ]
+}
