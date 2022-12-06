@@ -1,0 +1,5 @@
+﻿  CSVparser.cpp
+C:\Users\rmsnh\source\repos\VectorSorting\CSVparser.cpp(116,29): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\rmsnh\source\repos\VectorSorting\CSVparser.cpp(121,28): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\rmsnh\source\repos\VectorSorting\CSVparser.cpp(203,26): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+  LinkedList.vcxproj -> C:\Users\rmsnh\source\repos\LinkedList\x64\Debug\LinkedList.exe
